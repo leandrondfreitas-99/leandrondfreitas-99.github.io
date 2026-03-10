@@ -1,0 +1,83 @@
+.container{
+    width: 100%;
+}
+
+@media (min-width: 1024px) and (max-width: 2560px){
+    .card{
+        margin: 20% 10%;
+    }
+    .qr-code{
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .card{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        margin: 5% 40%;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        width: auto;
+    
+    }
+    
+    body{
+        max-width: 1440px;
+        background-color:hsl(212, 45%, 89%);
+        font-size: 15px;
+    }
+
+    .card-text{
+        margin: 15px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(216, 15%, 48%);
+    }
+    .card-text .card-title{
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    .card{
+        margin: 20% 10%;
+    }
+    .qr-code{
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .card{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        margin: 30% 5%;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+        width: auto;
+    
+    }
+    
+    body{
+        max-width: 375px;
+        background-color:hsl(212, 45%, 89%);
+        font-size: 15px;
+    }
+
+    .card-text{
+        margin: 15px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(216, 15%, 48%);
+    }
+    .card-text .card-title{
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+    }
+}
