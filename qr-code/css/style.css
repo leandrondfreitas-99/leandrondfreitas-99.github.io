@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-@media (min-width: 1024px) and (max-width: 2560px){
+@media (min-width: 1400px) {
     .card{
         margin: 20% 10%;
     }
@@ -14,7 +14,7 @@
     .card{
         background-color: hsl(0, 0%, 100%);
         border-radius: 10px;
-        margin: 5% 40%;
+        margin: 40% 40%;
         padding: 20px;
         align-items: center;
         text-align: center;
@@ -23,7 +23,7 @@
     }
     
     body{
-        max-width: auto;
+        max-width: 1440px;
         background-color:hsl(212, 45%, 89%);
         font-size: 15px;
     }
