@@ -19,7 +19,28 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
-    
+    position: relative;
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 
+                0 40px 80px rgba(255, 255, 255, 0.1);
+}
+
+.title-card{
+    border-bottom: solid 1px rgb(255, 255, 255);
+    width: 450px;
+}
+
+.container::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 100vh;
+    background: radial-gradient(ellipse at center top, rgba(255,255,255,0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .profile-title {
@@ -49,4 +70,89 @@ body {
     height: 9rem;
     border-radius: 50%;
     margin-left: 2rem;
+}
+
+.tabela ul {
+    list-style: none;
+    padding: 0;
+     display: grid;
+     /* duas colunas lado a lado: nome do projeto e status;
+         nome deve ocupar mais espaço que estado */
+     grid-template-columns: 7fr 1fr;
+    column-gap: 0.2rem;      /* espaçamento entre as células */
+    align-items: center;   /* alinhar verticalmente se altura variar */
+}
+
+.tabela .nome-projeto {
+    background: rgb(22, 18, 18);
+    color: rgb(209, 209, 209);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.tabela a{
+    text-decoration: none;
+    display: block;
+    color: rgb(209, 209, 209);
+}
+
+.tabela a:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.tabela .nome-projeto:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.tabela .status {
+    background: rgb(22, 18, 18);
+    color: rgb(209, 209, 209);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgb(22, 18, 18);
+    color: rgb(209, 209, 209);
+    font-size: 0.9rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 8px rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+    color: rgb(238, 235, 48);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: rgb(20, 255, 12);
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.fi-sr-checkbox {
+    color: rgb(57, 255, 39);
+}
+
+.fi-sr-alarm-clock {
+    color: rgb(255, 219, 57);
 }
