@@ -1,0 +1,46 @@
+.attribution { font-size: 12px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 15px;
+    margin: 33% 35%;
+}
+
+.profile-avatar {
+    background-image: url('../images/avatar-jessica.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+
+.profile-name {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.profile-local {
+    color: hsl(75, 94%, 57%);
+    font-weight: 700;
+}
+
+.profile-bio {
+    margin: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: hsl(0, 0%, 65%);
+    font-weight: 600;
+}

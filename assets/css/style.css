@@ -55,6 +55,13 @@ body {
     font-size: 4rem;
 }
 
+.summ-card h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+     margin-bottom: 1rem;
+
+}
+
 .content-card p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
@@ -70,6 +77,10 @@ body {
     height: 9rem;
     border-radius: 50%;
     margin-left: 2rem;
+}
+
+.tabela {
+    font-family: 'bangers', cursive;
 }
 
 .tabela ul {
@@ -149,10 +160,6 @@ footer a:hover {
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
 }
 
-.fi-sr-checkbox {
-    color: rgb(57, 255, 39);
-}
-
-.fi-sr-alarm-clock {
-    color: rgb(255, 219, 57);
+.fi {
+    font-size: 1.2rem;
 }
