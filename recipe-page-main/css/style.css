@@ -1,203 +1,249 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
 :root {
-    --titulo: hsl(14, 45%, 36%);
-    font-family: 'Outfit', sans-serif; 
-    
-
+  --titulo: hsl(14, 45%, 36%);
+  font-family: "Outfit", sans-serif;
 }
 
 body p {
-    font-size: 16px;
-
+  font-size: 16px;
 }
-.attribution { 
-    font-size: 0.6875rem;
-    text-align: center;
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
 }
 
 .attribution a {
-     color: hsl(228, 45%, 44%); 
+  color: hsl(228, 45%, 44%);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-    margin: 0;
-} 
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  margin: 0;
+}
 
 .card {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    margin: 0;
-    
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  margin: 0;
 }
 .imagem {
-    background-image: url(../assets/images/image-omelette.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    width: 98vw;
-    height: 25vh;
+  background-image: url(../assets/images/image-omelette.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: auto;
+  height: 25vh;
 }
 
 .main-title {
-    line-height: 1;
-    font-family: "Young Serif", serif;
-    font-style: normal;
-    margin: 1.5rem;
-    font-size: 2rem;
+  line-height: 1;
+  font-family: "Young Serif", serif;
+  font-style: normal;
+  margin: 1.5rem;
+  font-size: 2rem;
 }
 
 .text {
-    margin: 1.55rem;
-    font-weight: 500;
-    font-size: 1.023rem;
-    color: rgb(75, 75, 75);
-    line-height: 1.4;
-    justify-content: left;    
+  margin: 1.55rem;
+  font-weight: 500;
+  font-size: 1.023rem;
+  color: rgb(75, 75, 75);
+  line-height: 1.4;
+  justify-content: left;
 }
 
 .preparation h2 {
-    color: hsl(332, 51%, 32%);
-    line-height: 1;
-    font-size: 1.25rem;
+  color: hsl(332, 51%, 32%);
+  line-height: 1;
+  font-size: 1.25rem;
 }
 
 .preparation ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .preparation li {
-    position: relative;
-    margin-bottom: 0.5rem;
-    padding-left: 2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
 }
 
 .dot1::before {
-    content: "•";
-            color: hsl(332, 51%, 32%);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            position: absolute;
-            left: 5px;
-            top: 20%;
-            font-size: 1.2rem;
-            
+  content: "•";
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  position: absolute;
+  left: 5px;
+  top: 20%;
+  font-size: 1.2rem;
 }
 
 .dot2::before {
-    content: "•";
-            color: hsl(332, 51%, 32%);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            position: absolute;
-            left: 5px;
-            top: -2px;
-            font-size: 1.2rem;
-            
+  content: "•";
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  font-size: 1.2rem;
 }
 
 .preparation {
-    background-color: hsl(330, 100%, 98%);
-    
-    border-radius: 1rem;
-    padding: 0.5rem 2rem;
-    margin: 1.7rem;
-    font-weight: 500;
-    font-size: 1.023rem;
-    color: rgb(75, 75, 75);
-    line-height: 1.7;
-    justify-content: left;    
+  background-color: hsl(330, 100%, 98%);
+
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 1.7rem;
+  font-weight: 500;
+  font-size: 1.023rem;
+  color: rgb(75, 75, 75);
+  line-height: 1.7;
+  justify-content: left;
 }
 .steps {
-    margin: 1.7rem;
-    padding-bottom: 1.5rem;
-    font-weight: 500;
-    font-size: 1.023rem;
-    color: rgb(75, 75, 75);
-    line-height: 1.7;
-    justify-content: left;
-    border-bottom: 1px solid rgba(216, 215, 215, 0.74);   
+  margin: 1.7rem;
+  padding-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.023rem;
+  color: rgb(75, 75, 75);
+  line-height: 1.7;
+  justify-content: left;
+  border-bottom: 1px solid rgba(216, 215, 215, 0.74);
 }
 
 .step-title {
-    font-family: "Young Serif", serif;
-    color: var(--titulo);
-    line-height: 1.5;
-    font-size: 1.7rem;
+  font-family: "Young Serif", serif;
+  color: var(--titulo);
+  line-height: 1.5;
+  font-size: 1.7rem;
 }
 
 .ingredients {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .steps li {
-    position: relative;
-    margin-bottom: 0.5rem;
-    padding-left: 2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
 }
 
 .dot3::before {
-    content: "•";
-            color: var(--titulo);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            position: absolute;
-            left: 5px;
-            top: -2px;
-            font-size: 1.2rem;
-            
+  content: "•";
+  color: var(--titulo);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  font-size: 1.2rem;
 }
 
 .dot4::before {
-    content: "•";
-            color: var(--titulo);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            position: absolute;
-            left: 5px;
-            top: 20%;
-            font-size: 1.2rem;
-            
+  content: "•";
+  color: var(--titulo);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  position: absolute;
+  left: 5px;
+  top: 20%;
+  font-size: 1.2rem;
 }
 
 .instructions li {
-    position: relative;
-    margin-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .instructions li::marker {
-    font-family: Outfit, sans-serif;
-    color: var(--titulo);
-    font-weight: bold;
+  font-family: Outfit, sans-serif;
+  color: var(--titulo);
+  font-weight: bold;
 }
 
 .nutrition {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .nutrition li {
-    width: 50%;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(216, 215, 215, 0.74);
-    padding-bottom: 0.5rem;
+  width: 50%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(216, 215, 215, 0.74);
+  padding-bottom: 0.5rem;
 }
 
 .num {
-    color: var(--titulo);
-    font-weight: 700;
+  color: var(--titulo);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .imagem {
+    background-image: url(../assets/images/image-omelette.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2rem;
+    height: 33vh;
+    border-radius: 1rem;
+
+    
+  }
+
+  .steps {
+    margin: 2rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+
+  .text {
+    margin: 2rem;
+    font-size: 1rem;
+  }
+
+  .card {
+    border-radius: 1.5rem;
+  }
+
+  .container {
+    max-width: 37vw;
+    margin: 2rem auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dot1::before {
+    top: -2px;
+  }
+
+  .dot4::before {
+    top: -2px;
+  }
 }
