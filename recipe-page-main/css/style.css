@@ -50,7 +50,7 @@ body p {
 }
 
 .text {
-    margin: 1.5rem;
+    margin: 1.55rem;
     font-weight: 500;
     font-size: 1.023rem;
     color: rgb(75, 75, 75);
@@ -59,34 +59,145 @@ body p {
 }
 
 .preparation h2 {
-    color: hsl(332, 84%, 30%);
+    color: hsl(332, 51%, 32%);
     line-height: 1;
     font-size: 1.25rem;
 }
 
 .preparation ul {
-    padding-left: 1.5rem;
-
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .preparation li {
-
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
 }
 
-ul li::marker {
-    color: hsl(332, 84%, 30%);
-    font-size: 1rem;
+.dot1::before {
+    content: "•";
+            color: hsl(332, 51%, 32%);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            position: absolute;
+            left: 5px;
+            top: 20%;
+            font-size: 1.2rem;
+            
 }
 
+.dot2::before {
+    content: "•";
+            color: hsl(332, 51%, 32%);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            position: absolute;
+            left: 5px;
+            top: -2px;
+            font-size: 1.2rem;
+            
+}
 
 .preparation {
     background-color: hsl(330, 100%, 98%);
+    
     border-radius: 1rem;
     padding: 0.5rem 2rem;
-    margin: 2rem;
+    margin: 1.7rem;
     font-weight: 500;
     font-size: 1.023rem;
     color: rgb(75, 75, 75);
     line-height: 1.7;
     justify-content: left;    
+}
+.steps {
+    margin: 1.7rem;
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.023rem;
+    color: rgb(75, 75, 75);
+    line-height: 1.7;
+    justify-content: left;
+    border-bottom: 1px solid rgba(216, 215, 215, 0.74);   
+}
+
+.step-title {
+    font-family: "Young Serif", serif;
+    color: var(--titulo);
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+
+.ingredients {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.steps li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.dot3::before {
+    content: "•";
+            color: var(--titulo);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            position: absolute;
+            left: 5px;
+            top: -2px;
+            font-size: 1.2rem;
+            
+}
+
+.dot4::before {
+    content: "•";
+            color: var(--titulo);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            position: absolute;
+            left: 5px;
+            top: 20%;
+            font-size: 1.2rem;
+            
+}
+
+.instructions li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    
+}
+
+.instructions li::marker {
+    font-family: Outfit, sans-serif;
+    color: var(--titulo);
+    font-weight: bold;
+}
+
+.nutrition {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nutrition li {
+    width: 50%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(216, 215, 215, 0.74);
+    padding-bottom: 0.5rem;
+}
+
+.num {
+    color: var(--titulo);
+    font-weight: 700;
 }
